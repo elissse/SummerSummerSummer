@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ЛетоЛетоЛето</string>
+    <string name="main">Главный</string>
+    <string name="send_button_text">отправь</string>
+    <string name="a_very_broken_heart">очень разбитое сердце</string>
+    <string name="press_to_break_hearts">нажми</string>
+    <string name="press_to_enter">нажмите</string>
+    <string name="so_how_many_dishes_wll_it_be">сколько блюд закажет критик?</string>
+    <string name="how_many_dishes">сколько???</string>
+    <string name="hello_blank_fragment">пустой фрагмент привет</string>
+    <string name="profile">профиль</string>
+    <string name="settings">Натсройки</string>
+    <string name="prompt_for_song">какую песню вы хотите послушать</string>
+    <string name="music_player">мьюзик плецйер</string>
+    <string name="playing">играет</string>
+    <string name="all_i_want_is_sleep">хочу спаааааааааать</string>
+    <string name="and_touch_some_grass">и траву</string>
+    <string name="and_look_at_a_star_apparently">и звезду</string>
+    <string name="and_listen_to_some_music_yeah">и лисен ту мюзик</string>
 </resources>

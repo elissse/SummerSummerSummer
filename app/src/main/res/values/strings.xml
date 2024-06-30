@@ -6,4 +6,15 @@
     <string name="press_to_enter">press to enter</string>
     <string name="so_how_many_dishes_wll_it_be">so how many dishes wll it be?</string>
     <string name="how_many_dishes">how many dishes???</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="main">Main</string>
+    <string name="settings">Settings</string>
+    <string name="prompt_for_song">enter a song you would like to listen to</string>
+    <string name="music_player">music_player</string>
+    <string name="playing">playing</string>
+    <string name="all_i_want_is_sleep">all i want is sleep</string>
+    <string name="and_touch_some_grass">and touch some grass</string>
+    <string name="and_look_at_a_star_apparently">and look at a star apparently</string>
+    <string name="and_listen_to_some_music_yeah">and listen to some music yeah</string>
 </resources>

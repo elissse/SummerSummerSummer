@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/baseline_headphones_24"
+        android:title="@string/prompt_for_song" />
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/baseline_brightness_3_24"
+        android:title="@string/all_i_want_is_sleep" />
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/baseline_grass_24"
+        android:title="@string/and_touch_some_grass" />
+    <item
+        android:id="@+id/fourthFragment"
+        android:icon="@drawable/baseline_grade_24"
+        android:title="@string/and_look_at_a_star_apparently" />
+    <item
+        android:id="@+id/fifthFragment"
+        android:icon="@drawable/baseline_music_note_24"
+        android:title="@string/and_listen_to_some_music_yeah" />
+</menu>
