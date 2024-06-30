@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SummerSummerSummer</string>
+    <string name="send_button_text">send</string>
+    <string name="a_very_broken_heart">a very broken heart</string>
+    <string name="press_to_break_hearts">press to break hearts</string>
+    <string name="press_to_enter">press to enter</string>
+    <string name="so_how_many_dishes_wll_it_be">so how many dishes wll it be?</string>
+    <string name="how_many_dishes">how many dishes???</string>
+</resources>
