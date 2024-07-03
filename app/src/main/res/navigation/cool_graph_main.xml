@@ -27,7 +27,38 @@
         android:id="@+id/thirdFragment"
         android:name="com.summersummersummer.hw2.ThirdFragment"
         android:label="fragment_third"
-        tools:layout="@layout/fragment_third" />
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_damnFragment"
+            app:destination="@id/damnFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_GKMCFragment"
+            app:destination="@id/GKMCFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_IGORFragment"
+            app:destination="@id/IGORFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_blondeFragment"
+            app:destination="@id/blondeFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_flowerBoyFragment"
+            app:destination="@id/flowerBoyFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_BTDFragment"
+            app:destination="@id/BTDFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_gingerFragment"
+            app:destination="@id/gingerFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_saturationFragment"
+            app:destination="@id/saturationFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_MMTBSFragment"
+            app:destination="@id/MMTBSFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_albumFragment"
+            app:destination="@id/albumFragment" />
+    </fragment>
     <fragment
         android:id="@+id/fourthFragment"
         android:name="com.summersummersummer.hw2.FourthFragment"
@@ -43,4 +74,58 @@
         android:name="com.summersummersummer.hw2.SixthFragment"
         android:label="fragment_sixth"
         tools:layout="@layout/fragment_sixth" />
+    <fragment
+        android:id="@+id/damnFragment"
+        android:name="com.summersummersummer.hw2.DamnFragment"
+        android:label="fragment_damn"
+        tools:layout="@layout/fragment_damn" />
+    <fragment
+        android:id="@+id/blondeFragment"
+        android:name="com.summersummersummer.hw2.BlondeFragment"
+        android:label="fragment_blonde"
+        tools:layout="@layout/fragment_blonde" />
+    <fragment
+        android:id="@+id/GKMCFragment"
+        android:name="com.summersummersummer.hw2.GKMCFragment"
+        android:label="fragment_gkmc"
+        tools:layout="@layout/fragment_gkmc" />
+    <fragment
+        android:id="@+id/flowerBoyFragment"
+        android:name="com.summersummersummer.hw2.FlowerBoyFragment"
+        android:label="fragment_flower_boy"
+        tools:layout="@layout/fragment_flower_boy" />
+    <fragment
+        android:id="@+id/IGORFragment"
+        android:name="com.summersummersummer.hw2.IGORFragment"
+        android:label="fragment_igor"
+        tools:layout="@layout/fragment_igor" />
+    <fragment
+        android:id="@+id/BTDFragment"
+        android:name="com.summersummersummer.hw2.BTDFragment"
+        android:label="fragment_btd"
+        tools:layout="@layout/fragment_btd" />
+    <fragment
+        android:id="@+id/gingerFragment"
+        android:name="com.summersummersummer.hw2.GingerFragment"
+        android:label="fragment_ginger"
+        tools:layout="@layout/fragment_ginger" />
+    <fragment
+        android:id="@+id/saturationFragment"
+        android:name="com.summersummersummer.hw2.SaturationFragment"
+        android:label="fragment_saturation"
+        tools:layout="@layout/fragment_saturation" />
+    <fragment
+        android:id="@+id/MMTBSFragment"
+        android:name="com.summersummersummer.hw2.MMTBSFragment"
+        android:label="frament_mmtbs"
+        tools:layout="@layout/frament_mmtbs" />
+    <fragment
+        android:id="@+id/albumFragment"
+        android:name="com.summersummersummer.hw2.AlbumFragment"
+        android:label="fragment_album"
+        tools:layout="@layout/fragment_album" >
+        <action
+            android:id="@+id/action_albumFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
 </navigation>
