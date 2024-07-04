@@ -1,15 +1,13 @@
-package com.summersummersummer
+package com.summersummersummer.day1
 
 import android.os.Bundle
 import android.util.Log
-import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.core.widget.doOnTextChanged
-import com.summersummersummer.databinding.ActivityMainBinding
+import com.summersummersummer.R
 import kotlin.random.Random
 
 class CookingStuffBecauseIJustFinishedTheThirdSeasonOfTheBear : ComponentActivity() {
@@ -19,7 +17,7 @@ class CookingStuffBecauseIJustFinishedTheThirdSeasonOfTheBear : ComponentActivit
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.criticising_food)
-        Log.d("TAGTAGTAG","hvjvhjhj")
+        Log.d("TAGTAGTAG", "hvjvhjhj")
         initViewsClassic()
     }
 
@@ -28,7 +26,7 @@ class CookingStuffBecauseIJustFinishedTheThirdSeasonOfTheBear : ComponentActivit
         this.editText = findViewById(R.id.dishes)
         this.textView = findViewById(R.id.textView)
         val foodCritic = CrazyCritic(textView)
-        Log.d("TAGTAGTAG","dgsgd")
+        Log.d("TAGTAGTAG", "dgsgd")
         calling_the_chef_button?.setOnClickListener {
             val enteredData: String = editText?.text.toString()
             Log.d("TAG#", "$enteredData")
@@ -69,27 +67,33 @@ class CookingStuffBecauseIJustFinishedTheThirdSeasonOfTheBear : ComponentActivit
                     3 -> set.add(ChocolateCake())
                 }
             }
+            var output: String = ""
             while (set.size != 1) {
                 val dish1: Dish = set.removeAt(Random.nextInt(0, 10).mod(set.size))
                 val dish2: Dish = set.removeAt(Random.nextInt(0, 10).mod(set.size))
-                textView?.setText("so ${dish1.name} and ${dish2.name} are on the table. who will end up in the trash?").toString()
+
+
+                output += "so ${dish1.name} and ${dish2.name} are on the table. who will end up in the trash?"
+
                 Log.d(
                     "TAG_CRITIC",
                     "so ${dish1.name} and ${dish2.name} are on the table. who will end up in the trash?"
                 )
                 var winner = dish1
                 if (comparingDishes(dish1, dish2) < 0) winner = dish2
+                output += "so basically the ${winner.name} is not so bad"
                 Log.d("TAG_CRITIC", "so basically the ${winner.name} is not so bad")
-                textView?.setText("so basically the ${winner.name} is not so bad").toString()
 
             }
             if (!set.isEmpty()) {
+                output += "so the food critic ate so much food that he cannot make himself try ${set.get(0).name}"
                 Log.d(
                     "TAG_CRITIC",
                     "so the food critic ate so much food that he cannot make himself try ${set.get(0).name}"
                 )
-                textView?.setText("so the food critic ate so much food that he cannot make himself try ${set.get(0).name}").toString()
+
             }
+            textView?.setText(output).toString()
         }
 
         fun comparingDishes(dish1: Dish, dish2: Dish): Int {
